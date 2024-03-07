@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+    grid-template-areas: 
+    ". text text . "
+    ". text text ."
+    "img img img img"
+    "img img img img"
+    "img img img img"
+    ;
+}
+.text{
+    grid-area: text;
+
+}
+h1{
+    grid-area: text;
+    background: red;
+    font-size: 350%;
+    font-weight: 100;
+
+}
+p{
+    grid-area: text;
+    background: green;
+    font-size: 150%;
+    color: grey;
+}
+.img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10vw;
+}
