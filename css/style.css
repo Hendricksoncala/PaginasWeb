@@ -44,10 +44,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; 
-
+    position:absolute; 
+    left: 45%;
+    right:55%
     
 
+}
+button{
+    font-color: white
 }
 .boton{
     display: flex;
