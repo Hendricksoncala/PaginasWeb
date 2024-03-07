@@ -5,7 +5,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    height: 100vh;
+    height: 100%;
     grid-template-areas: 
     ". text text . "
     ". text text ."
@@ -16,26 +16,56 @@ body{
 }
 .text{
     grid-area: text;
-
+    height: 10vh;
+    text-align: center;
 }
 h1{
     grid-area: text;
-    background: red;
     font-size: 350%;
     font-weight: 100;
-
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    
 }
 p{
     grid-area: text;
-    background: green;
     font-size: 150%;
-    color: grey;
+    color: #252525;
+    text-align: center;
+}
+button{
+    font-size: 120%;
+    text-align: center;
+    padding: 15px 50px;
+    border-radius: 15% ;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+
+    
+
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    
 }
 .img{
+    position: relative;
     grid-area: img;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 10vw;
+    top: 30px
+    
+}
+.img2{
+    padding-top:15px;
 }
